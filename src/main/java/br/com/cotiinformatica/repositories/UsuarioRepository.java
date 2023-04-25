@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import br.com.br.cotiinformatica.entities.Usuario;
+import br.com.cotiinformatica.entities.Usuario;
 import br.com.cotiinformatica.factories.ConnectionFactory;
 
 public class UsuarioRepository {

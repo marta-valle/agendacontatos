@@ -1,11 +1,11 @@
-package br.com.br.cotiinformatica.entities;
+package br.com.cotiinformatica.entities;
 
 public class Contato {
 	private Integer idContato;
 	private String nome;
 	private String telefone;
 	private String email;
-	private String observacao;
+	private String observacoes;
 	private Integer idUsuario;
 	private Usuario usuario;
 
@@ -13,14 +13,14 @@ public class Contato {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Contato(Integer idContato, String nome, String telefone, String email, String observacao, Integer idUsuario,
+	public Contato(Integer idContato, String nome, String telefone, String email, String observacoes, Integer idUsuario,
 			Usuario usuario) {
 		super();
 		this.idContato = idContato;
 		this.nome = nome;
 		this.telefone = telefone;
 		this.email = email;
-		this.observacao = observacao;
+		this.observacoes = observacoes;
 		this.idUsuario = idUsuario;
 		this.usuario = usuario;
 	}
@@ -57,12 +57,12 @@ public class Contato {
 		this.email = email;
 	}
 
-	public String getObservacao() {
-		return observacao;
+	public String getObservacoes() {
+		return observacoes;
 	}
 
-	public void setObservacao(String observacao) {
-		this.observacao = observacao;
+	public void setObservacoes(String observacoes) {
+		this.observacoes = observacoes;
 	}
 
 	public Integer getIdUsuario() {
@@ -84,7 +84,7 @@ public class Contato {
 	@Override
 	public String toString() {
 		return "Contato [idContato=" + idContato + ", nome=" + nome + ", telefone=" + telefone + ", email=" + email
-				+ ", observacao=" + observacao + ", idUsuario=" + idUsuario + ", usuario=" + usuario + "]";
+				+ ", observacoes=" + observacoes + ", idUsuario=" + idUsuario + ", usuario=" + usuario + "]";
 	}
 
 }

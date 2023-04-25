@@ -29,7 +29,7 @@
           <div class="card-body">
             <h5 class="card-title">Cadastrar Contatos</h5>
             <p class="card-text">Clique aqui para cadastrar novos contatos.</p>
-            <a href="/agendacontatos/admin/cadastrar-contatos" class="btn btn-outline-primary">Acessar</a>
+            <a href="/agendacontatos/admin/cadastro-contato" class="btn btn-outline-primary">Acessar</a>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
           <div class="card-body">
             <h5 class="card-title">Consultar Contatos</h5>
             <p class="card-text">Clique aqui para consultar os contatos já cadastrados.</p>
-            <a href="/agendacontatos/admin/consultar-contatos" class="btn btn-outline-primary">Acessar</a>
+            <a href="/agendacontatos/admin/consulta-contato" class="btn btn-outline-primary">Acessar</a>
           </div>
         </div>
       </div>

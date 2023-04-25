@@ -1,4 +1,4 @@
-package br.com.br.cotiinformatica.entities;
+package br.com.cotiinformatica.entities;
 
 import java.util.List;
 

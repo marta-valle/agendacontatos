@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class ConnectionFactory {
+	
 	public Connection getConnection() throws Exception {
 
 		String driver = "org.postgresql.Driver";
