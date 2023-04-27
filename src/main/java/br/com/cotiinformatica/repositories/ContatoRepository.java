@@ -110,7 +110,7 @@ public class ContatoRepository {
 		Connection connection = connectionFactory.getConnection();
 		
 		//escrevendo no bd
-		PreparedStatement statement = connection.prepareStatement("select * from contato where id=contato =?");
+		PreparedStatement statement = connection.prepareStatement("select * from contato where idcontato =?");
 		
 		statement.setInt(1, idContato);
 		ResultSet resultSet = statement.executeQuery();
