@@ -31,6 +31,24 @@ public class UsuarioRepository {
 		// CRIAR METODO PARA CONSULTAR NO BD SE O USUARIO JA EXISTE.
 	}
 
+	public void update(Usuario usuario) throws Exception {
+		// ABRIR CONEXÃO
+		ConnectionFactory connectionFactory = new ConnectionFactory();
+		Connection connection = connectionFactory.getConnection();
+		// ESCREVER NO SQL
+		PreparedStatement statement = connection
+				.prepareStatement("update usuario set nome=? , email=? , senha=md5(?) where idusuario =?");
+		// IMPUT DE DADOS
+		statement.setString(1, usuario.getNome());
+		statement.setString(2, usuario.getEmail());
+		statement.setString(3, usuario.getSenha());
+		statement.setInt(4, usuario.getIdUsuario());
+		// EXECUTA
+		statement.execute();
+		// FECHA CONEXAO
+		connection.close();
+	}
+
 	public Usuario findByEmail(String email) throws Exception {
 		// abrir conexão com o bd
 		ConnectionFactory connectionFactory = new ConnectionFactory();

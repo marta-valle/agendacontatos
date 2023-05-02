@@ -9,6 +9,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         
           <li class="nav-item">
             <a class="nav-link" href="/agendacontatos/admin/cadastro-contato">
             Cadastrar Contatos
@@ -17,8 +18,16 @@
           <li class="nav-item">
             <a class="nav-link" href="/agendacontatos/admin/consulta-contato">
             Consultar Contatos
+             </a>
+          </li>
+            <!-- Incluido dia 02/05 -->
+          <li class="nav-item">
+            <a class="nav-link" href="/agendacontatos/admin/dados-usuario">
+            Dados do Usuario
             </a>
           </li>
+          
+          
         </ul>
         <div class="d-flex">
           <span class="navbar-text me-3 text-white"><strong>${usuario.nome}</strong></span>

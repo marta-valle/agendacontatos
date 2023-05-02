@@ -19,7 +19,17 @@
 				<p class="text-center">Para recuperar sua senha de usuário,
 					preencha os campos:</p>
 				<hr />
-				<form>
+				<div class="text-sucess text-center">
+				<h5>
+				${mensagem_sucesso}</h5>
+				
+				</div>
+				<div class="text-danger text-center">
+				<h5>
+				${mensagem_erro}</h5>
+				
+				</div>
+				<form method="post" action="recuperar-senha">
 					<div class="mb-3">
 						<label for="email" class="form-label">Entre com o seu
 							email:</label> <input type="email" class="form-control" id="email"
